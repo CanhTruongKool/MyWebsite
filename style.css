@@ -39,7 +39,6 @@ body{
     height: 80px;
     z-index: 3;
     top: 0px;
-
 }
 #header .header__imgname{
     display: flex;
@@ -124,9 +123,9 @@ body{
 display:flex;
 } 
 #PopupContent{
-width: 50%;
-height: 50%;
-margin-left: 20%;
+margin-left: 20vw;
+height: 40vh;
+width: 40vw;
 background-color: whitesmoke;
 z-index: 2;
 position: absolute;
