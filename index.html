@@ -5,22 +5,19 @@
         <title>CanhTruong's Website</title>
         <script src="./Functions.js"> </script>
         <link rel="stylesheet" type="text/css" href="style.css"> 
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
   </head>
 
    <body>
         <div id = "header">
                 <div class="header__imgname">
                     <h2 class="header_title" style=" font-family: 'Poiret One', cursive; font-weight:900; font-size: 30px; 
-                    "> <a href="index.html"> Canh Truong 
-                        <span>
-                            <h4 style=" font-weight:bolder; font-size: 20px;">Kool</h4>
-                        </span> </a>
-                    </h2>       
-                    </div>
+                    "> <a href="index.html"> Canh Truong </a></h2>       
+                </div>
                 <ul class="header-menu">
-                    <li> <a href="">Home</a> </li>
-                    <li> <a href="">Experience</a> </li>
-                    <li> <a id="Contact" href="" >Contact me
+                    <li> <a href="#">Home</a> </li>
+                    <li> <a href="#">Experience</a> </li>
+                    <li> <a id="Contact" >Contact me
                         <ul id="dropdown_menu">
                             <br>
                             <li onmouseover="ContactDropDown()" onmouseout="ContactDropNone()"> Youtube</li>
@@ -32,33 +29,91 @@
                 </ul>           
      </div>
       <div id="main">
-            <div id="left-side-controller" >
-                <br>
-                <p>Welcome to my Website</p> <br>
-                <div id="Popup">
-                    <button id="Click_button" onclick="Popup()"> Little about me !!</button>
-                <div id="PopupContent">
-                    <span>
-                        <button id="Close_button"  onclick="Popout()"><span>X</span></button>
-                    </span>
-                    <br>
-                    <h2>Full name:Truong The Canh</h3> <br>
-                    <h2>Year of birth: 2003 </h2>
+        <div class="container-fluid">
+            <div class="row flex-nowrap">
+                <div  id="left-side-controller" class="col-auto col-md-3 col-xl-2 px-sm-2 px-0 ">
+                    <div class="d-flex flex-column align-items-center align-items-sm-start px-3 pt-2 text-white min-vh-100">
+                        <a href="/" class="d-flex align-items-center pb-3 mb-md-0 me-md-auto text-white text-decoration-none">
+                            <span id="Welcome-text" >Welcome to <br> My Website</span> 
+                        </a>
+                        <ul class="nav nav-pills flex-column mb-sm-auto mb-0 align-items-center align-items-sm-start" id="menu">
+                            <li class="nav-item">
+                              <button id="Popbutton" onclick="Popup()">My infor</button>
+                            </li>
+                            <li>
+                                <a href="#submenu1" data-bs-toggle="collapse" class="nav-link px-0 align-middle">
+                                    <i class="fs-4 bi-speedometer2"></i> <span class="ms-1 d-none d-sm-inline">Dashboard</span> </a>
+                                <ul class="collapse show nav flex-column ms-1" id="submenu1" data-bs-parent="#menu">
+                                    <li class="w-100">
+                                        <a href="#" class="nav-link px-0"> <span class="d-none d-sm-inline">Item</span> 1 </a>
+                                    </li>
+                                    <li>
+                                        <a href="#" class="nav-link px-0"> <span class="d-none d-sm-inline">Item</span> 2 </a>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li>
+                                <a href="#" class="nav-link px-0 align-middle">
+                                    <i class="fs-4 bi-table"></i> <span class="ms-1 d-none d-sm-inline">Orders</span></a>
+                            </li>
+                            <li>
+                                <a href="#submenu2" data-bs-toggle="collapse" class="nav-link px-0 align-middle ">
+                                    <i class="fs-4 bi-bootstrap"></i> <span class="ms-1 d-none d-sm-inline">Bootstrap</span></a>
+                                <ul class="collapse nav flex-column ms-1" id="submenu2" data-bs-parent="#menu">
+                                    <li class="w-100">
+                                        <a href="#" class="nav-link px-0"> <span class="d-none d-sm-inline">Item</span> 1</a>
+                                    </li>
+                                    <li>
+                                        <a href="#" class="nav-link px-0"> <span class="d-none d-sm-inline">Item</span> 2</a>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li>
+                                <a href="#submenu3" data-bs-toggle="collapse" class="nav-link px-0 align-middle">
+                                    <i class="fs-4 bi-grid"></i> <span class="ms-1 d-none d-sm-inline">Products</span> </a>
+                                    <ul class="collapse nav flex-column ms-1" id="submenu3" data-bs-parent="#menu">
+                                    <li class="w-100">
+                                        <a href="#" class="nav-link px-0"> <span class="d-none d-sm-inline">Product</span> 1</a>
+                                    </li>
+                                    <li>
+                                        <a href="#" class="nav-link px-0"> <span class="d-none d-sm-inline">Product</span> 2</a>
+                                    </li>
+                                    <li>
+                                        <a href="#" class="nav-link px-0"> <span class="d-none d-sm-inline">Product</span> 3</a>
+                                    </li>
+                                    <li>
+                                        <a href="#" class="nav-link px-0"> <span class="d-none d-sm-inline">Product</span> 4</a>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li>
+                                <a href="#" class="nav-link px-0 align-middle">
+                                    <i class="fs-4 bi-people"></i> <span class="ms-1 d-none d-sm-inline">Customers</span> </a>
+                            </li>
+                        </ul>
+                        <hr>
+                    </div>
                 </div>
-                </div>
-            </div> 
-           <div id="content">
-                <div id="banner">  </div>   
-               
-                <div>
+                <div id="content" class="col py-3">
+                    
+                    <div id="PopupContent">
+                        <span>
+                            <button id="Close_button"  onclick="Popout()"><span>X</span></button>
+                        </span>
+                        <br>
+                        <h2>Full name:Truong The Canh</h3> <br>
+                        <h2>Year of birth: 2003 </h2>
+                    </div>
 
+                    <div id="banner">
+                        
+                    </div>
                 </div>
-           </div>
+            </div>
+        </div>
       </div>
-      
    </body>
-
-  <footer id="footer">
+   <footer id="footer">
     <p>This is bottom</p>
   </footer>
-</html>
+</html> 
