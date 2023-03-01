@@ -208,7 +208,7 @@ height: 6%;
 #nav_menu_buton{
     display: none;
 }
-@media screen and (max-width : 750px){
+@media screen and (max-width : 950px){
     .header-menu{
         display: none !important;
     }
