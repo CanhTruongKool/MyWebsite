@@ -1,12 +1,14 @@
-*{
+* {
     padding: 0;
     margin: 0;
     box-sizing: border-box;
 }
-a{
-    text-decoration: none ;
+
+a {
+    text-decoration: none;
 }
-#header a{
+
+#header a {
     color: white;
     text-decoration: none;
     padding: 15px 20px;
@@ -16,21 +18,25 @@ a{
 html {
     scroll-behavior: smooth;
     font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
-    background-color:black;
+    background-color: black;
     overflow-x: hidden;
     height: 100%;
 }
 
-html, body {
+html,
+body {
     max-width: 100%;
     background-color: white;
 }
-body{
+
+body {
     height: 100%;
 }
-#header{    
+
+#header {
     display: flex;
-    background-color: rgb(255, 255, 255);;
+    background-color: rgb(255, 255, 255);
+    ;
     justify-content: space-between;
     align-items: center;
     background-color: rgb(0, 0, 0, 0.8);
@@ -41,23 +47,26 @@ body{
     top: 0px;
     margin-bottom: 0px !important;
 }
-#header .header__imgname{
+
+#header .header__imgname {
     display: flex;
     margin-left: 50px;
     padding: 0px 190px 14px 0px;
     color: white;
     font-family: 'Poppins', sans-serif;
-    font-weight: 200;  
+    font-weight: 200;
 }
-#header .header_title{
+
+#header .header_title {
     margin-top: 25px;
     font-family: 'Poppins', sans-serif;
 }
+
 #header li {
     display: inline-block;
 }
 
-#header .header-menu{
+#header .header-menu {
     display: block;
     text-transform: uppercase;
     padding: 10px 20px;
@@ -66,12 +75,14 @@ body{
     margin-top: 25px;
     height: 100%;
 }
- .header-menu a:hover {
+
+.header-menu a:hover {
     color: black;
     background-color: #ccc;
     cursor: pointer;
 }
- .Contact:hover .dropdown_menu{
+
+.Contact:hover .dropdown_menu {
     z-index: 2;
     position: absolute;
     margin-top: 16px;
@@ -80,121 +91,142 @@ body{
     text-transform: uppercase;
     padding-right: 28px;
     padding-left: 28px;
-    background-color:rgb(0, 0, 0, 0.8);
-    border-radius: 3px;color: white;
-  }
-.dropdown_menu{
+    background-color: rgb(0, 0, 0, 0.8);
+    border-radius: 3px;
+    color: white;
+}
+
+.dropdown_menu {
     display: none;
 }
 
-.dropdown_menu li:hover{
+.dropdown_menu li:hover {
     font-style: italic;
     text-decoration: underline;
-}    
-#header-menu-drop{
+}
+
+#header-menu-drop {
     display: none;
-    background-color:rgb(0, 0, 0, 0.8);
+    background-color: rgb(0, 0, 0, 0.8);
     z-index: 2;
     position: fixed;
 }
-#header-menu-drop a{
+
+#header-menu-drop a {
     color: white;
     text-decoration: none;
 }
+
 #header-menu-drop a:hover {
     color: rgb(0, 0, 0, 0.8);
     background-color: #ccc;
     cursor: pointer;
 }
-.Contact2:hover .dropdown_menu2{
+
+.Contact2:hover .dropdown_menu2 {
     z-index: 2;
     position: absolute;
     display: block;
     text-transform: uppercase;
-    background-color:rgb(0, 0, 0, 0.8);
+    background-color: rgb(0, 0, 0, 0.8);
 
-    border-radius: 3px;color: white;
-  }
+    border-radius: 3px;
+    color: white;
+}
+
 .dropdown_menu2 {
     display: none;
     margin-left: -10px;
 }
-.dropdown_menu2 li:hover{
+
+.dropdown_menu2 li:hover {
     font-style: italic;
     text-decoration: underline;
-}   
-.dropdown_menu2 li{
-   text-decoration: none;
-   font-size: 0.8rem;
-   margin-top: -20px;
 }
-#main{
+
+.dropdown_menu2 li {
+    text-decoration: none;
+    font-size: 0.8rem;
+    margin-top: -20px;
+}
+
+#main {
     display: inline-block;
     width: 100%;
     height: 95%;
     margin-top: 70px;
     position: relative;
 }
-#left-side-controller{
+
+#left-side-controller {
     float: left;
-    color: rgb(13,130,250);
+    color: rgb(13, 130, 250);
     bottom: 0;
     position: relative;
     box-sizing: inherit;
-    background-color: rgb(240,240,240);
+    background-color: rgb(240, 240, 240);
 }
-#Popbutton{
+
+#Popbutton {
     border: none;
-    color: rgb(13,130,250);
+    color: rgb(13, 130, 250);
 }
-#Welcome-text{
-    color: rgb(13,130,250);
+
+#Welcome-text {
+    color: rgb(13, 130, 250);
     font-size: 2rem;
     font-family: 'Poppins', sans-serif;
 }
-#content{
+
+#content {
     display: block;
     width: 70%;
-    position: relative; 
+    position: relative;
     width: 100%;
     padding-left: 0px !important;
     padding-right: 0px !important;
 }
-#banner{   
+
+#banner {
     background-image: url("./Picture/background.png");
     width: 100%;
     height: 400px;
     margin-top: -16px;
 }
-#Popup{
+
+#Popup {
     width: 100%;
     height: 650px;
 }
-#Click_button{
-display:flex;
-} 
-#PopupContent{
-height: 40vh;
-width: 40vw;
-background-image: url("./Picture/profile.jpg");
-background-size: cover;
-background-repeat: no-repeat;
-z-index: 3;
-position: absolute;
-display: none;
-border-width: 3px ;
-border-color: cadetblue;
+
+#Click_button {
+    display: flex;
 }
 
-#Close_button{
-float: right;
-width: 3%;
-height: 6%;
+#PopupContent {
+    height: 40vh;
+    width: 40vw;
+    background-image: url("./Picture/profile.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    z-index: 3;
+    position: absolute;
+    display: none;
+    border-width: 3px;
+    border-color: cadetblue;
 }
-#Popup{
+
+#Close_button {
+    float: right;
+    width: 3%;
+    height: 6%;
+}
+
+#Popup {
     color: black;
 }
-#footer{
+
+#footer {
     display: flex;
     background-color: black;
     width: 100%;
@@ -202,37 +234,51 @@ height: 6%;
     position: relative;
     bottom: 0;
 }
-#footer-introduction{
+
+#footer-introduction {
     font-size: 0.7rem;
 }
-#nav_menu_buton{
+
+#nav_menu_buton {
     display: none;
 }
-@media screen and (max-width : 1200px){
-    footer{
+
+@media screen and (max-width : 1200px) {
+    footer {
+        position: absolute;
+        width: 100%;
+        height: 60px;
+        /* Height of the footer */
+        background: #6cf;
         bottom: 0;
     }
-    .header-menu{
+
+    .header-menu {
         display: none !important;
     }
-    #nav_menu_buton{
+
+    #nav_menu_buton {
         display: block;
         float: right;
-        background-color:black;
-        color:white;
+        background-color: black;
+        color: white;
     }
-    #footer_infor{
+
+    #footer_infor {
         display: none !important;
     }
-    #left-side-controller{
+
+    #left-side-controller {
         display: none;
     }
-    #copyRight{
+
+    #copyRight {
         margin-left: 20%;
     }
 }
+
 @media screen and (min-width : 1200px) {
-    #header-menu-drop{
+    #header-menu-drop {
         display: none !important;
     }
 }
