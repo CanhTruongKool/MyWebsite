@@ -4,7 +4,7 @@
     box-sizing: border-box;
 }
 a{
-    text-decoration: none;
+    text-decoration: none ;
 }
 #header a{
     color: white;
@@ -66,13 +66,12 @@ body{
     margin-top: 25px;
     height: 100%;
 }
-
-#header .header-menu a:hover {
+ .header-menu a:hover {
     color: black;
     background-color: #ccc;
     cursor: pointer;
 }
-#header  #Contact:hover #dropdown_menu{
+ .Contact:hover .dropdown_menu{
     z-index: 2;
     position: absolute;
     margin-top: 16px;
@@ -81,17 +80,54 @@ body{
     text-transform: uppercase;
     padding-right: 28px;
     padding-left: 28px;
-    background-color:black;
+    background-color:rgb(0, 0, 0, 0.8);
     border-radius: 3px;color: white;
   }
-#dropdown_menu{
+.dropdown_menu{
     display: none;
 }
 
-#dropdown_menu li:hover{
+.dropdown_menu li:hover{
     font-style: italic;
     text-decoration: underline;
 }    
+#header-menu-drop{
+    display: none;
+    background-color:rgb(0, 0, 0, 0.8);
+    z-index: 2;
+    position: fixed;
+}
+#header-menu-drop a{
+    color: white;
+    text-decoration: none;
+}
+#header-menu-drop a:hover {
+    color: rgb(0, 0, 0, 0.8);
+    background-color: #ccc;
+    cursor: pointer;
+}
+.Contact2:hover .dropdown_menu2{
+    z-index: 2;
+    position: absolute;
+    display: block;
+    text-transform: uppercase;
+    background-color:rgb(0, 0, 0, 0.8);
+
+    border-radius: 3px;color: white;
+  }
+.dropdown_menu2 {
+    display: none;
+    margin-left: -10px;
+}
+.dropdown_menu2 li:hover{
+    font-style: italic;
+    text-decoration: underline;
+}   
+.dropdown_menu2 li{
+   text-decoration: none;
+   font-size: 0.8rem;
+   margin-top: -20px;
+}
 #main{
     display: inline-block;
     width: 100%;
@@ -168,4 +204,32 @@ height: 6%;
 }
 #footer-introduction{
     font-size: 0.7rem;
+}
+#nav_menu_buton{
+    display: none;
+}
+@media screen and (max-width : 750px){
+    .header-menu{
+        display: none !important;
+    }
+    #nav_menu_buton{
+        display: block;
+        float: right;
+        background-color:black;
+        color:white;
+    }
+    #footer_infor{
+        display: none !important;
+    }
+    #left-side-controller{
+        display: none;
+    }
+    #copyRight{
+        margin-left: 20%;
+    }
+}
+@media screen and (min-width : 750px) {
+    #header-menu-drop{
+        display: none !important;
+    }
 }

@@ -10,15 +10,21 @@
 
    <body>
         <div id = "header">
+          <button id="nav_menu_buton" onclick="menuOut()">
+            <svg xmlns="http://www.w3.org/2000/svg" width="50" height="50" fill="currentColor" class="bi bi-menu-down" viewBox="0 0 16 16">
+            <path d="M7.646.146a.5.5 0 0 1 .708 0L10.207 2H14a2 2 0 0 1 2 2v9a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h3.793L7.646.146zM1 7v3h14V7H1zm14-1V4a1 1 0 0 0-1-1h-3.793a1 1 0 0 1-.707-.293L8 1.207l-1.5 1.5A1 1 0 0 1 5.793 3H2a1 1 0 0 0-1 1v2h14zm0 5H1v2a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1v-2zM2 4.5a.5.5 0 0 1 .5-.5h8a.5.5 0 0 1 0 1h-8a.5.5 0 0 1-.5-.5zm0 4a.5.5 0 0 1 .5-.5h11a.5.5 0 0 1 0 1h-11a.5.5 0 0 1-.5-.5zm0 4a.5.5 0 0 1 .5-.5h6a.5.5 0 0 1 0 1h-6a.5.5 0 0 1-.5-.5z"/>
+            </svg>
+          </button>
                 <div class="header__imgname">
                     <h2 class="header_title" style=" font-family: 'Poiret One', cursive; font-weight:900; font-size: 30px; 
                     "> <a href="index.html"> Canh Truong </a></h2>       
                 </div>
+                
                 <ul class="header-menu">
                     <li> <a href="">Home</a> </li>
                     <li> <a href="#">Experience</a> </li>
-                    <li> <a id="Contact" >Contact me
-                        <ul id="dropdown_menu">
+                    <li> <a class="Contact" >Contact me
+                        <ul class="dropdown_menu">
                             <br>
                             <li onmouseover="ContactDropDown()" onmouseout="ContactDropNone()"> Youtube</li>
                             <br> <br>
@@ -26,7 +32,8 @@
                         </ul>
                     </a>   
                     </li>
-                </ul>           
+                </ul>    
+                       
      </div>
       <div id="main">
         <div class="container-fluid">
@@ -97,6 +104,19 @@
 
                 <div id="content" class="col py-3">
                     <div id="banner">
+                      <ul id="header-menu-drop">
+                        <li> <a href="">Home</a> </li>
+                        <li> <a href="#">Experience</a> </li>
+                        <li> <a class="Contact2" >Contact me
+                            <ul class="dropdown_menu2">
+                                <br>
+                                <li onmouseover="ContactDropDown()" onmouseout="ContactDropNone()"> Youtube</li>
+                                <br> 
+                                <li onmouseover="ContactDropDown()" onmouseout="ContactDropNone()"> Facebook </li>
+                      </ul>
+                        </a>   
+                        </li>
+                    </ul>
                         <div id="PopupContent">
                             <span>
                                 <button id="Close_button"  onclick="Popout()"><span>X</span></button>
@@ -111,14 +131,8 @@
                 
         </div>
         <footer id="footer" class="text-center text-lg-start bg-white text-muted">
-            <section class="d-flex justify-content-center justify-content-lg-between p-4 border-bottom">
-                <!-- Right -->
-              </section>
-              <!-- Section: Social media -->
             
-              <!-- Section: Links  -->
-              <section class="">
-                <div class="container text-center text-md-start mt-5">
+                <div id="footer_infor" class="container text-center text-md-start mt-5">
                   <!-- Grid row -->
                   <div class="row mt-3">
                     <!-- Grid column -->
@@ -179,7 +193,7 @@
                     <!-- Grid column -->
             
                     <!-- Grid column -->
-                    <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mb-4">
+                    <div id="" class="col-md-4 col-lg-3 col-xl-3 mx-auto mb-4">
                       <!-- Links -->
                       <h6 class="text-uppercase fw-bold mb-4">Contact</h6>
                       <p><i class="text-reset"></i>Address: Quy Nhon city,Binh Dinh,Vietnam</p>
@@ -196,7 +210,7 @@
               <!-- Section: Links  -->
             
               <!-- Copyright -->
-              <div class="text-center p-4" style="background-color: rgba(0, 0, 0, 0.025);">
+              <div id="copyRight" class="text-center p-4" style="background-color: rgba(0, 0, 0, 0.025);">
                 © 2023 Copyright:
                 <a class="text-reset fw-bold" href="#">CanhTruong.com</a>
               </div>
