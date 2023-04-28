@@ -1,1 +1,1 @@
-This is Canh Truong's offical website
+This is Canh Truong's offical website. Wish you have a nice day.
